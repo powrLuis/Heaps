@@ -14,6 +14,7 @@ public:
 	void push(T item);
 	T top();
 	void sort();
+	void print();
 };
 
 template<class T>
@@ -106,5 +107,14 @@ inline void S_heap<T>::sort()
 	{
 		arr[q].value = top();
 		q--;
+	}
+}
+
+template<class T>
+inline void S_heap<T>::print()
+{
+	for (auto var : arr)
+	{
+		std::cout << var.value << std::endl;
 	}
 }

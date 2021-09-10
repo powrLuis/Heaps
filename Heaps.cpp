@@ -17,6 +17,16 @@ int main()
         heap.push(Custom(indices[i], i));
         hep.push(Custom(indices[i], i));
     }
+    
+    std::cout << "Heap no estable antes de ordenar"<<std::endl;
+    heap.print();
+    std::cout << "Heap no estable despues de ordenar" << std::endl;
     heap.sort();
+    heap.print();
+
+    std::cout << "Heap estable antes de ordenar" << std::endl;
+    hep.print();
+    std::cout << "Heap estable despues de ordenar" << std::endl;
     hep.sort();
+    hep.print();
 }

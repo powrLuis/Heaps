@@ -1,5 +1,6 @@
 #pragma once
 //clase generica para representar un orden
+#include <iostream>
 class Custom
 {
 public:
@@ -34,5 +35,6 @@ public:
 	{
 		return dist == c.dist;
 	}
+	friend std::ostream& operator<<(std::ostream& os, const Custom& c);
 };
 
